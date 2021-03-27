@@ -30,7 +30,7 @@ const PostsModal = dispatchPosts => {
                 <label>Description</label>
                 <input className="form-control" onChange={e => setText(e.target.value)} placeholder="Enter description"></input>         
             </form>
-            <div class="modal-footer">
+            <div className="modal-footer">
                <button type="button" className="btn btn-success" onClick={submitPost}>Save</button>
                 <button type="button" className="btn btn-primary" onClick={() => setAddPostBool(false)}>Cancel</button>
             </div>

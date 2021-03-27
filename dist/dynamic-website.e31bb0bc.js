@@ -48483,7 +48483,7 @@ var PostsModal = function PostsModal(dispatchPosts) {
     },
     placeholder: "Enter description"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    class: "modal-footer"
+    className: "modal-footer"
   }, /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "btn btn-success",
@@ -48576,38 +48576,38 @@ var PostModal = function PostModal(dispatchPost) {
   return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Modal, {
     show: editPostBool
   }, /*#__PURE__*/_react.default.createElement("div", {
-    class: "modal-header"
+    className: "modal-header"
   }, /*#__PURE__*/_react.default.createElement("h5", {
-    class: "modal-title",
+    className: "modal-title",
     id: "exampleModalLabel"
   }, "Edit Post")), /*#__PURE__*/_react.default.createElement("div", {
-    class: "modal-body"
+    className: "modal-body"
   }, /*#__PURE__*/_react.default.createElement("form", {
     id: "myForm",
     method: "post"
   }, /*#__PURE__*/_react.default.createElement("label", null, "New Title"), /*#__PURE__*/_react.default.createElement("input", {
-    class: "form-control",
+    className: "form-control",
     value: title,
     onChange: function onChange(e) {
       return setTitle(e.target.value);
     },
     placeholder: "Enter post title"
   }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "New Image Url"), /*#__PURE__*/_react.default.createElement("input", {
-    class: "form-control",
+    className: "form-control",
     value: image,
     onChange: function onChange(e) {
       return setImage(e.target.value);
     },
     placeholder: "Enter image url"
   }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "New Description"), /*#__PURE__*/_react.default.createElement("input", {
-    class: "form-control",
+    className: "form-control",
     value: text,
     onChange: function onChange(e) {
       return setText(e.target.value);
     },
     placeholder: "Enter description"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    class: "modal-footer"
+    className: "modal-footer"
   }, /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "btn btn-success",
@@ -48992,7 +48992,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Introduction.default, null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Posts.default, null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Introduction.default, null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Posts.default, null), /*#__PURE__*/_react.default.createElement("br", null));
 };
 
 var _default = App;
@@ -49175,7 +49175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60709" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55315" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
