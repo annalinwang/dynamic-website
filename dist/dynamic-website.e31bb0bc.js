@@ -48867,9 +48867,15 @@ var IntroductionModal = function IntroductionModal(dispatchIntro) {
     className: "modal-footer"
   }, /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
-    className: "btn btn-primary",
+    className: "btn btn-success",
     onClick: submit
-  }, "Save"))));
+  }, "Save"), /*#__PURE__*/_react.default.createElement("button", {
+    type: "button",
+    className: "btn btn-primary",
+    onClick: function onClick() {
+      return setEditIntroBool(false);
+    }
+  }, "Cancel"))));
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
@@ -48931,7 +48937,10 @@ var Introduction = function Introduction(_ref) {
 
   var image = introduction.image,
       description = introduction.description;
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, editIntroBool ? /*#__PURE__*/_react.default.createElement(_IntroductionModal.default, {
+    editIntroBool: editIntroBool,
+    setEditIntroBool: setEditIntroBool
+  }) : '', /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("nav", {
     className: "navbar navbar-expand-lg navbar-light bg-light"
@@ -48954,10 +48963,7 @@ var Introduction = function Introduction(_ref) {
     onClick: function onClick() {
       return setEditIntroBool(true);
     }
-  }, "Edit"))))), editIntroBool ? /*#__PURE__*/_react.default.createElement(_IntroductionModal.default, {
-    editIntroBool: editIntroBool,
-    setEditIntroBool: setEditIntroBool
-  }) : '');
+  }, "Edit"))))));
 };
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -49175,7 +49181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55315" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59828" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

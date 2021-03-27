@@ -27,7 +27,8 @@ const IntroductionModal = dispatchIntro => {
                 <input className="form-control" value={description} onChange={e => setDescription(e.target.value)} placeholder="Enter Bio"></input>            
             </form>
             <div className="modal-footer">
-                <button type="button" className="btn btn-primary" onClick={submit}>Save</button>
+                <button type="button" className="btn btn-success" onClick={submit}>Save</button>
+                <button type="button" className="btn btn-primary" onClick={() => setEditIntroBool(false)}>Cancel</button>
             </div>
         </div>
       </Modal>

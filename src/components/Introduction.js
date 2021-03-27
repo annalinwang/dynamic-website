@@ -8,6 +8,7 @@ const Introduction = ({introduction}) => {
 
     return (
         <>
+        { editIntroBool ? <IntroductionModal editIntroBool={editIntroBool} setEditIntroBool={setEditIntroBool} /> : ''}
         <br></br>
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,11 +25,8 @@ const Introduction = ({introduction}) => {
                 </div>
             </nav>
         </div>
-        { editIntroBool ? <IntroductionModal editIntroBool={editIntroBool} setEditIntroBool={setEditIntroBool} /> : ''}
-        
         </>
     )
-    
 }
 
 const mapStateToProps = state => ({
