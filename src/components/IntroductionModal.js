@@ -14,8 +14,7 @@ const IntroductionModal = dispatchIntro => {
       }
 
     return (
-    <>
-        <Modal show={editIntroBool} backdrop="static" keyboard="false">
+      <Modal show={editIntroBool} backdrop="static" keyboard="false">
         <div className="modal-header">
             <h5 className="modal-title" id="exampleModalLabel">About Me</h5>
         </div>
@@ -31,8 +30,7 @@ const IntroductionModal = dispatchIntro => {
                 <button type="button" className="btn btn-primary" onClick={submit}>Save</button>
             </div>
         </div>
-        </Modal>
-    </>
+      </Modal>
     )
   }
 

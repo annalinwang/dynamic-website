@@ -48835,7 +48835,7 @@ var IntroductionModal = function IntroductionModal(dispatchIntro) {
     dispatchEditIntroduction(image, description);
   };
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Modal, {
+  return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Modal, {
     show: editIntroBool,
     backdrop: "static",
     keyboard: "false"
@@ -48869,7 +48869,7 @@ var IntroductionModal = function IntroductionModal(dispatchIntro) {
     type: "button",
     className: "btn btn-primary",
     onClick: submit
-  }, "Save")))));
+  }, "Save"))));
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {

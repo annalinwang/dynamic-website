@@ -3,7 +3,6 @@ import {connect} from 'react-redux'
 import IntroductionModal from './IntroductionModal'
 
 const Introduction = ({introduction}) => {
-
     const [editIntroBool, setEditIntroBool] = useState(false)
     const {image, description} = introduction
 
